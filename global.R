@@ -50,5 +50,3 @@ cities <- inner_join(cities, ibge, by = "ibgeID")
 # write.csv(cities, "data/processed/cities.csv")
 
 rm(covid, ibge, raw)
-
-#checking git

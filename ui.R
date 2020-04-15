@@ -9,7 +9,7 @@ sidebar <- dashboardSidebar(
 		menuItem("Brasil", tabName = "br_dashboard", icon = icon("globe-americas")),
 		menuItem("Estados", tabName = "st_dashboard", icon = icon("globe")),
 		menuItem("Municípios", tabName = "ct_dashboard", icon = icon("map-marker-alt")),
-		menuItem("Código Fonte", icon = icon("file-code-o"), href = "https://github.com/rsilveirafh/")
+		menuItem("Código Fonte", icon = icon("file-code-o"), href = "https://github.com/rsilveirafh/covid19_r")
 	)
 )
 
