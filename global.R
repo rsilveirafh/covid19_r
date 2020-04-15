@@ -31,7 +31,7 @@ states <- covid %>%
 			  totalD = sum(deaths))
 
 cities <- covid %>% 
-	group_by(date, city, ibgeID) %>% 
+	group_by(date, state, city, ibgeID) %>% 
 	summarise(newC = sum(newCases),
 			  totalC = sum(totalCases),
 			  totalD = sum(deaths))
