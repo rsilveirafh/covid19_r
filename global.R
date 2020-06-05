@@ -3,7 +3,6 @@ library(plotly)
 library(shiny)
 library(shinydashboard)
 library(tidyverse)
-library(tidyverse)
 
 ## Data ----
 ## https://github.com/wcota/covid19br - https://wcota.me/covid19br
