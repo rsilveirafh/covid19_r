@@ -4,3 +4,8 @@
 .Ruserdata
 /old
 covid19_r.Rproj
+/data
+data_acquisition.R
+ibge.csv
+raw.csv
+/rsconnect
