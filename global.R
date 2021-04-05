@@ -8,8 +8,8 @@ library(tidyverse)
 ## https://github.com/wcota/covid19br - https://wcota.me/covid19br
 	
 raw <- read_csv("https://raw.githubusercontent.com/wcota/covid19br/master/cases-brazil-cities-time_changesOnly.csv")
-# write.csv(raw, "raw.csv")
-# raw <- read.csv("raw.csv", h = T) # for tests
+# write_csv(raw, "raw.csv")
+# raw <- read_csv("raw.csv") # for tests
 
 covid <- raw %>% 
 	mutate(date = as.Date(date, format = "%Y-%m-%d"),

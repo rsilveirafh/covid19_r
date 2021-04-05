@@ -3,11 +3,11 @@
 
 library(tidyverse)
 
-# raw <- read.csv("https://raw.githubusercontent.com/wcota/covid19br/master/cases-brazil-cities-time.csv", h = T)
+raw <- read_csv("https://raw.githubusercontent.com/wcota/covid19br/master/cases-brazil-cities-time_changesOnly.csv")
 
-# write.csv(raw, "raw.csv")
+#write_csv(raw, "raw.csv")
 
-raw <- read.csv("raw.csv", h = T)
+raw <- read_csv("raw.csv")
 
 covid <- raw %>% 
 	mutate(date = as.Date(date, format = "%Y-%m-%d"),
@@ -55,8 +55,8 @@ ibge <- read.csv("data/raw/gps_cities.csv", h = T)	%>%
 
 cities <- inner_join(cities, ibge, by = "ibgeID")
 
-# write.csv(brazil, "data/processed/brazil.csv")
-# write.csv(states, "data/processed/states.csv")
-# write.csv(cities, "data/processed/cities.csv")
+#write.csv(brazil, "data/processed/brazil.csv")
+#write.csv(states, "data/processed/states.csv")
+#write.csv(cities, "data/processed/cities.csv")
 
 rm(covid, ibge, raw)
