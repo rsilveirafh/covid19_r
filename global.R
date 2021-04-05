@@ -7,7 +7,7 @@ library(tidyverse)
 ## Data ----
 ## https://github.com/wcota/covid19br - https://wcota.me/covid19br
 	
-raw <- read.csv("https://raw.githubusercontent.com/wcota/covid19br/master/cases-brazil-cities-time.csv")
+raw <- read.csv("https://github.com/wcota/covid19br/blob/master/cases-brazil-cities-time.csv.gz")
 # write.csv(raw, "raw.csv")
 # raw <- read.csv("raw.csv", h = T) # for tests
 
