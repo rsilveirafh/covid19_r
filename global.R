@@ -35,7 +35,7 @@ cities <- covid %>%
 			  totalC = sum(totalCases),
 			  totalD = sum(deaths))
 
-ibge <- read_csv("https://raw.githubusercontent.com/wcota/covid19br/master/gps_cities.csv")	%>% 
+ibge <- read_csv("https://github.com/wcota/covid19br/blob/master/gps_cities.csv")	%>% 
 	select(ibgeID, lat, lon)
 
 # write.csv(ibge, "ibge.csv")
