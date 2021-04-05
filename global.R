@@ -7,7 +7,7 @@ library(tidyverse)
 ## Data ----
 ## https://github.com/wcota/covid19br - https://wcota.me/covid19br
 	
-raw <- read.csv("https://github.com/wcota/covid19br/blob/master/cases-brazil-cities-time.csv.gz")
+raw <- read_csv("https://raw.githubusercontent.com/wcota/covid19br/master/cases-brazil-cities-time_changesOnly.csv")
 # write.csv(raw, "raw.csv")
 # raw <- read.csv("raw.csv", h = T) # for tests
 
@@ -35,7 +35,7 @@ cities <- covid %>%
 			  totalC = sum(totalCases),
 			  totalD = sum(deaths))
 
-ibge <- read_csv("https://github.com/wcota/covid19br/blob/master/gps_cities.csv")	%>% 
+ibge <- read_csv("https://raw.githubusercontent.com/wcota/covid19br/master/gps_cities.csv")	%>% 
 	select(ibgeID, lat, lon)
 
 # write.csv(ibge, "ibge.csv")
