@@ -82,7 +82,7 @@ server <- function(input, output) {
 								   		 "Rondônia" = "RO", "Roraima" = "RR", "Tocantins" = "TO"),
 								   `Sul` = 
 								   	list("Paraná" = "PR", "Rio Grande do Sul" = "RS", "Santa Catarina" = "SC"),
-								   `Suldeste` = 
+								   `Sudeste` = 
 								   	list("Espírito Santo" = "ES", "Minas Gerais" = "MG", 
 								   		 "Rio de Janeiro" = "RJ", "São Paulo" = "SP")))
 	})
@@ -216,7 +216,7 @@ server <- function(input, output) {
 								   		 "Rondônia" = "RO", "Roraima" = "RR", "Tocantins" = "TO"),
 								   `Sul` = 
 								   	list("Paraná" = "PR", "Rio Grande do Sul" = "RS", "Santa Catarina" = "SC"),
-								   `Suldeste` = 
+								   `Sudeste` = 
 								   	list("Espírito Santo" = "ES", "Minas Gerais" = "MG", 
 								   		 "Rio de Janeiro" = "RJ", "São Paulo" = "SP")))
 	})
